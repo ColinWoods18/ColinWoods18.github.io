@@ -3934,15 +3934,11 @@
 .copyright {
 	background: #771C1F;
 	font-size: 0.9em;
-	position: fixed;
-	bottom: 0;
-	width: 100%;
-
+	padding: 2em 0 2em 0;
 	text-align: center;
-	color:#771C1F;
 }
 .copyright a {
-	color: #771C1F;
+	color: white;
 	font-weight: 700;
 }
 
