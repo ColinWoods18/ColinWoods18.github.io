@@ -2364,12 +2364,20 @@
 		.image.mediaobject {
 			display: block;
 			margin: 0 0 2em 0;
-			height: 15%
+			width:100%
 		}
 			.image.mediaobject img{
-				height: 15%;
+				height: 10%;
 			}
-
+		.image.inlinemediaobject {
+				display: block;
+				margin: 0 0 2em 4em;
+				width: 100%
+		}
+			.image.inlinemediaobject img{
+					height: 65%;
+			}
+	
 		.image.main {
 			display: block;
 			margin: 0 0 3em 0;
