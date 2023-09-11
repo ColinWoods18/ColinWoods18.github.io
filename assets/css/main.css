@@ -2371,11 +2371,11 @@
 			}
 		.image.inlinemediaobject {
 				display: block;
-				margin: 0 0 2em 50%;
+				margin: 0 0 2em 18%;
 				width: 100%
 		}
 			.image.inlinemediaobject img{
-					height: 65%;
+					height: 70%;
 			}
 	
 		.image.main {
