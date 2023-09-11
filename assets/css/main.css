@@ -2368,6 +2368,8 @@
 		}
 			.image.mediaobject img{
 				height: 10%;
+				width: 10%;
+				max-width: 320px
 			}
 		.image.inlinemediaobject {
 				display: block;
