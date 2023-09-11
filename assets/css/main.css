@@ -2371,7 +2371,7 @@
 			}
 		.image.inlinemediaobject {
 				display: block;
-				margin: 0 0 2em 4em;
+				margin: 0 0 2em 50%;
 				width: 100%
 		}
 			.image.inlinemediaobject img{
