@@ -2369,7 +2369,7 @@
 			.image.mediaobject img{
 				height: 10%;
 				width: 10%;
-				max-width: 320px
+				max-width: 240px
 			}
 		.image.inlinemediaobject {
 				display: block;
