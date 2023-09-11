@@ -2354,11 +2354,20 @@
 		.image.fit {
 			display: block;
 			margin: 0 0 2em 0;
-			max-width: 45%;
+			width: 100%;
 		}
 
 			.image.fit img {
-				max-width: 40%;
+				width:100%
+			}
+
+		.image.mediaobject {
+			display: block;
+			margin: 0 0 2em 0;
+			height: 15%
+		}
+			.image.mediaobject img{
+				height: 15%;
 			}
 
 		.image.main {
