@@ -31,35 +31,37 @@
 					<p>Here is a collection of projects I have built personally or with small teams of peers. This body of work showcases my competency as a data-driven computer scientist. It highlights my strong work ethic, teamwork skills, technical skills, and my own innate leadership abilities.</p>
 				</div>
 			</section>
-		<!-- Two -->
-			<section id="two">
-				<div class="inner">
-					<article>
-						<div class="content">
-							<header>
-								<h3>Google GenAI Hackathon</h3>
-							</header>
-							<div class="image fit">
-								<img src="images/pic06.jpg" alt="GoogleHackathon" />
-							</div>
-							<p>I was personally nominated to represent Sogeti in the Google GenAI Hackathon. Our team was tasked with creating an MVP (Minimum Viable Product) of a business application utilizing GCP's GenAI services. We used a webapp frontend plugged into a Python based backend hosted on Google App Engine, and communicated with Google's VertexAI chatbot model via their PaLM2 API. We created a personalized FoodQuest app which would find food options for users using their current location. The FoodQuest app was able to adjust for health conditions or allergies, or even different dietary restrictions. For example you could ask it for food options near you that are both vegan friendly and under 400 calories and it would provide a list of dishes at different restaurants that met the requirement.</p>
-                            <a href="https://youtu.be/ywiSMt1wTeE?si=ffPuZjAvEXka7GjO"><font color= #0096FF>Here is a link to our demonstrational video for the project.</font></a>
-                        </div>
-					</article>
-					<article class="alt">
-						<div class="content">
-							<header>
-								<h3>OpenCV Puzzle Solver</h3>
-							</header>
-							<div class="image inlinemediaobject">
-								<img src="images/pic02.jpg" alt="TechniColorPuzzle" width: 70%/>
-							</div>
-							<p>For my senior design project, our team created a puzzle solver app allowing the user to upload photos of puzzle pieces from a puzzle they select -- so that the puzzle can be automatically solved. Then, using the OpenCV computer vision library in Python, we scanned each piece and defined the size and length of the piece and its edges. Once we had all of the dimensions stored, we used a genetic algorithm to progressively solve the puzzle. We were able to complete large puzzles of up to 4000 pieces without error, depending on the color profile of the puzzle itself.</p>
-                            <a href="https://github.com/ColinWoods18/CV-PuzzleSolver"><font color= #0096FF>Here is a link to our GitHub repository for the project. It includes directions explaining how to download and run our application</font></a>
-                        </div>
-					</article>
-				</div>
-			</section>
+<!-- Two -->
+<section id="two">
+    <div class="inner">
+        <article>
+            <div class="content">
+                <header>
+                    <h3>Matriculation Prediction</h3>
+                </header>
+                <div class="image fit">
+                    <img src="images/pic07.png" alt="Matriculation Bird" style="width: 300px; height: auto; display: block; margin: 0 auto;" />
+                </div>
+                <p>This project, built with a team of graduate students for our NLP capstone, aimed to predict college matriculation from student application essays. I led the effort, designing and implementing a deep hierarchical transformer model using DistilBERT with chunked input to process long-form text. </p> 
+                <p>The output probabilities were ensembled with a traditional Random Forest model and then aggregated using a meta-level neural network ensemble approach (MLP), producing a final classification model with precision, recall, and F1 scores exceeding 0.94. Additional confidence-based features from each model helped the ensemble reach an accuracy of 98.9% on the final holdout set. </p> 
+                <p>I also implemented stratified cross-validation, class weighting, and extensive evaluation metrics.</p>
+                <a href="https://github.com/ColinWoods18/Matriculation-NLP-Project"><font color="#0096FF">Here is a link to our GitHub repository for the project.</font></a>
+            </div>
+        </article>
+        <article class="alt">
+            <div class="content">
+                <header>
+                    <h3>OpenCV Puzzle Solver</h3>
+                </header>
+                <div class="image inlinemediaobject">
+                    <img src="images/pic02.jpg" alt="TechniColorPuzzle" style="width: 300px; height: auto; display: block; margin: 400 auto;" />
+                </div>
+                <p>For my senior design project, our team created a puzzle solver app allowing the user to upload photos of puzzle pieces from a puzzle they select -- so that the puzzle can be automatically solved. Then, using the OpenCV computer vision library in Python, we scanned each piece and defined the size and length of the piece and its edges. Once we had all of the dimensions stored, we used a genetic algorithm to progressively solve the puzzle. We were able to complete large puzzles of up to 4000 pieces without error, depending on the color profile of the puzzle itself.</p>
+                <a href="https://github.com/ColinWoods18/CV-PuzzleSolver"><font color= #0096FF>Here is a link to our GitHub repository for the project. It includes directions explaining how to download and run our application</font></a>
+            </div>
+        </article>
+</section>
+
 
 		<!-- Three -->
 			<section id="three">
@@ -90,17 +92,33 @@
 						</div>
 					</article>
 					<article>
-					<div class="content">
-						<div class="image fit">
-							<img src="images/pic04.jpg" alt="StochasticGradientDescentCalculus" />
-							<header>
-								<h3>Stochastic Gradient Descent</h3>
-							</header>
-							<p>Here is an example of my prowess in Machine Learning Algorithms. I used Stochastic Gradient Descent methods for both Linear and Logistic regression approaches of processing the Pima-Indians-Diabetes dataset.</p>
-							 <a href="https://github.com/ColinWoods18/Stochastic-Gradient-Descent"><font color= #0096FF>Here is a link to my GitHub repository for the project.</font></a>
+						<div class="content">
+							<div class="image fit">
+								<img src="images/pic06.jpg" alt="GoogleHackathon" />
+								<header>
+									<h3>Google Generative AI Hackathon</h3>
+								</header>
+							</div>
+							<p>I was personally nominated to represent Sogeti in the Google GenAI Hackathon. Our team was tasked with creating an MVP (Minimum Viable Product) of a business application utilizing GCP's GenAI services. We used a webapp frontend plugged into a Python based backend hosted on Google App Engine, and communicated with Google's VertexAI chatbot model via their PaLM2 API. We created a personalized FoodQuest app which would find food options for users using their current location. The FoodQuest app was able to adjust for health conditions or allergies, or even different dietary restrictions. For example you could ask it for food options near you that are both vegan friendly and under 400 calories and it would provide a list of dishes at different restaurants that met the requirement.</p>
+							<a href="https://youtu.be/ywiSMt1wTeE?si=ffPuZjAvEXka7GjO"><font color= #0096FF>Here is a link to our demonstrational video for the project.</font></a>
 						</div>
 					</article>
 				</div>
+					<!-- <article>
+							<div class="content">
+								<div class="image fit">
+									<img src="images/pic07.png" alt="Matriculation Bird" style="width: 200px; height: auto; display: block; margin: 0 auto;" />
+									<header>
+										<h3>Matriculation Prediction</h3>
+									</header>
+								</div>
+								<p>This project, built with a team of graduate students for our NLP capstone, aimed to predict college matriculation from student application essays. I led the effort, designing and implementing a deep hierarchical transformer model using DistilBERT with chunked input to process long-form text. </p> 
+								<p>The output probabilities were ensembled with a traditional Random Forest model and then aggregated using a meta-level neural network ensemble approach (MLP), producing a final classification model with precision, recall, and F1 scores exceeding 0.94. Additional confidence-based features from each model helped the ensemble reach an accuracy of 98.9% on the final holdout set. </p> 
+								<p> I also implemented stratified cross-validation, class weighting, and extensive evaluation metrics.</p>
+								<a href="https://github.com/ColinWoods18/Matriculation-NLP-Project"><font color="#0096FF">Here is a link to our GitHub repository for the project.</font></a>
+							</div>
+						</article>
+				</div> -->
 			</section>
 
 		<!-- Footer -->
