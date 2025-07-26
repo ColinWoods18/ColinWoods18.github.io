@@ -1,158 +1,471 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Colin Woods – AI & Machine Learning Engineer specializing in deep learning, NLP, and scalable ML pipelines.">
+  <meta name="keywords" content="AI, Machine Learning, NLP, Deep Learning, PyTorch, TensorFlow, Data Science, Colin Woods">
+  <meta property="og:title" content="Colin Woods | AI & ML Engineer Portfolio">
+  <meta property="og:description" content="AI & Machine Learning Engineer specializing in deep learning, NLP, scalable ML pipelines, and cloud AI deployment.">
+  <meta property="og:image" content="images/SuitPic.jpg">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#1e3a8a">
+  
+  <title>Colin Woods | Portfolio</title>
 
-<html>
-	<head>
-        <title>CDW's Portfolio</title>
-        <meta charset="utf-8" />
-        <meta name="CDW's Portfolio" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body>
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<a href="index.html" class="logo">Colin Woods' Portfolio</a>
-					<nav id="nav">
-						<a href="generic.html">About Me</a>
-						<a href="index.html">Projects & Contact</a>
-					</nav>
-				</div>
-			</header>
-			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 
+  <!-- Font Awesome (deferred) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="all" onload="this.media='all'">
 
-		<!-- One -->
-			<section id="one">
-				<div class="inner">
-					<header>
-						<h2>Projects</h2>
-					</header>
-					<p>Here is a collection of projects I have built personally or with small teams of peers. This body of work showcases my competency as a data-driven computer scientist. It highlights my strong work ethic, teamwork skills, technical skills, and my own innate leadership abilities.</p>
-				</div>
-			</section>
-<!-- Two -->
-<section id="two">
-    <div class="inner">
-        <article>
-            <div class="content">
-                <header>
-                    <h3>Matriculation Prediction</h3>
-                </header>
-                <div class="image fit">
-                    <img src="images/pic07.png" alt="Matriculation Bird" style="width: 300px; height: auto; display: block; margin: 0 auto;" />
-                </div>
-                <p>This project, built with a team of graduate students for our NLP capstone, aimed to predict college matriculation from student application essays. I led the effort, designing and implementing a deep hierarchical transformer model using DistilBERT with chunked input to process long-form text. </p> 
-                <p>The output probabilities were ensembled with a traditional Random Forest model and then aggregated using a meta-level neural network ensemble approach (MLP), producing a final classification model with precision, recall, and F1 scores exceeding 0.94. Additional confidence-based features from each model helped the ensemble reach an accuracy of 98.9% on the final holdout set. </p> 
-                <p>I also implemented stratified cross-validation, class weighting, and extensive evaluation metrics.</p>
-                <a href="https://github.com/ColinWoods18/Matriculation-NLP-Project"><font color="#0096FF">Here is a link to our GitHub repository for the project.</font></a>
-            </div>
-        </article>
-        <article class="alt">
-            <div class="content">
-                <header>
-                    <h3>OpenCV Puzzle Solver</h3>
-                </header>
-                <div class="image inlinemediaobject">
-                    <img src="images/pic02.jpg" alt="TechniColorPuzzle" style="width: 300px; height: auto; display: block; margin: 400 auto;" />
-                </div>
-                <p>For my senior design project, our team created a puzzle solver app allowing the user to upload photos of puzzle pieces from a puzzle they select -- so that the puzzle can be automatically solved. Then, using the OpenCV computer vision library in Python, we scanned each piece and defined the size and length of the piece and its edges. Once we had all of the dimensions stored, we used a genetic algorithm to progressively solve the puzzle. We were able to complete large puzzles of up to 4000 pieces without error, depending on the color profile of the puzzle itself.</p>
-                <a href="https://github.com/ColinWoods18/CV-PuzzleSolver"><font color= #0096FF>Here is a link to our GitHub repository for the project. It includes directions explaining how to download and run our application</font></a>
-            </div>
-        </article>
-</section>
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
 
-		<!-- Three -->
-			<section id="three">
-				<div class="inner">
-					<article>
-						<div class="content">
-							<div class="image fit">
-								<img src="images/pic03.jpg" alt="LinuxProgrammingPenguin" />
-							    <header>
-								    <h3>Linux Programming</h3>
-							    </header>
-                            </div>
-							<p>Of the courses that I took during my Bachelor's degree. One of the most difficult classes was my Linux Programming course. In this class I did everything from recreating command line utilities from scratch using shell scripting, to socket communication, parallel processing, Operating Systems design, and creating my own version of the linux shell itself.</p>
-							<a href="https://github.com/ColinWoods18/Linux-Programming"><font color= #0096FF>Here is a link to my GitHub repository containing all of my coursework.</font></a>
-						</div>
-					</article>
-					<article>
-						<div class="content">
-							<div class="image fit">
-								<img src="images/pic01.jpg" alt="Stegonography" />
-								<header>
-									<h3>Stenography Project</h3>
-								</header>
-								</div>
-							<p>Another partner and I developed a system for hiding copyright information within artwork images. We used Stenographic techniques to insert the copyright information into the image. This was done via making small encoded alterations to the RGB color values for pixels in one corner of the image. The result is a visually unaltered and unnoticable copyright tag that can be traced back to the original creator!</p>
-							<a href="https://github.com/sgoering1/Cyber-Security-Final-Project"><font color= #0096FF>Here is a link to our GitHub repository for the project.</font></a>
+  <style>
+    :root {
+      --primary: #3b82f6;
+      --secondary: #06b6d4;
+      --text-light: #f1f5f9;
+      --text-dark: #0f172a;
+      --bg-gradient: linear-gradient(135deg, #1e3a8a, #1e40af, #2563eb);
+    }
 
-						</div>
-					</article>
-					<article>
-						<div class="content">
-							<div class="image fit">
-								<img src="images/pic06.jpg" alt="GoogleHackathon" />
-								<header>
-									<h3>Google Generative AI Hackathon</h3>
-								</header>
-							</div>
-							<p>I was personally nominated to represent Sogeti in the Google GenAI Hackathon. Our team was tasked with creating an MVP (Minimum Viable Product) of a business application utilizing GCP's GenAI services. We used a webapp frontend plugged into a Python based backend hosted on Google App Engine, and communicated with Google's VertexAI chatbot model via their PaLM2 API. We created a personalized FoodQuest app which would find food options for users using their current location. The FoodQuest app was able to adjust for health conditions or allergies, or even different dietary restrictions. For example you could ask it for food options near you that are both vegan friendly and under 400 calories and it would provide a list of dishes at different restaurants that met the requirement.</p>
-							<a href="https://youtu.be/ywiSMt1wTeE?si=ffPuZjAvEXka7GjO"><font color= #0096FF>Here is a link to our demonstrational video for the project.</font></a>
-						</div>
-					</article>
-				</div>
-					<!-- <article>
-							<div class="content">
-								<div class="image fit">
-									<img src="images/pic07.png" alt="Matriculation Bird" style="width: 200px; height: auto; display: block; margin: 0 auto;" />
-									<header>
-										<h3>Matriculation Prediction</h3>
-									</header>
-								</div>
-								<p>This project, built with a team of graduate students for our NLP capstone, aimed to predict college matriculation from student application essays. I led the effort, designing and implementing a deep hierarchical transformer model using DistilBERT with chunked input to process long-form text. </p> 
-								<p>The output probabilities were ensembled with a traditional Random Forest model and then aggregated using a meta-level neural network ensemble approach (MLP), producing a final classification model with precision, recall, and F1 scores exceeding 0.94. Additional confidence-based features from each model helped the ensemble reach an accuracy of 98.9% on the final holdout set. </p> 
-								<p> I also implemented stratified cross-validation, class weighting, and extensive evaluation metrics.</p>
-								<a href="https://github.com/ColinWoods18/Matriculation-NLP-Project"><font color="#0096FF">Here is a link to our GitHub repository for the project.</font></a>
-							</div>
-						</article>
-				</div> -->
-			</section>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-		<!-- Footer -->
-			<section id="footer">
-				<div class="inner">
-					<header>
-						<h2>Get in Touch</h2>
-					</header>
-					<form action="https://formsubmit.co/colin.woods18@gmail.com" method="POST">
-						<div class="field half first">
-							<label for="name">Name</label>
-							<input type="text" name="name" id="name" />
-						</div>
-						<div class="field half">
-							<label for="email">Email</label>
-							<input type="email" name="email" id="email" />
-						</div>
-						<div class="field">
-							<label for="message">Message</label>
-							<textarea name="message" id="message" rows="6"></textarea>
-						</div>
-						<ul class="actions">
-							<li><input type="submit" value="Send Message" class="alt" /></li>
-						</ul>
-					</form>
-				</div>
-			</section>
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--text-dark);
+      background: #f8fafc;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 10%;
+      position: fixed;
+      width: 100%;
+      background: rgba(255,255,255,0.8);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      z-index: 50;
+    }
+
+    header h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: var(--text-dark);
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    /* HERO SECTION */
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: var(--bg-gradient);
+      color: var(--text-light);
+      padding: 0 1rem;
+    }
+
+    .hero img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid rgba(255,255,255,0.3);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+      margin-bottom: 1.5rem;
+      animation: fadeInUp 0.8s ease forwards;
+    }
+
+    .hero h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+      opacity: 0.9;
+      animation: fadeInUp 1.4s ease forwards;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      background: white;
+      color: var(--primary);
+      padding: 0.9rem 2rem;
+      border-radius: 50px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      animation: fadeInUp 1.8s ease forwards;
+    }
+
+    .btn-primary:hover {
+      background: var(--secondary);
+      color: white;
+    }
+
+    /* SECTION BASE */
+    section {
+      padding: 5rem 10%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* ABOUT SECTION */
+    .about {
+      text-align: center;
+    }
+
+    .about h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.4rem;
+      margin-bottom: 1rem;
+      color: var(--primary);
+    }
+
+    .about p {
+      font-size: 1.1rem;
+      color: #475569;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+      line-height: 1.7;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.8rem;
+    }
+
+    .skills span {
+      background: #e2e8f0;
+      color: var(--text-dark);
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+
+    /* PROJECTS SECTION */
+    .projects {
+      text-align: center;
+      margin-top: 3rem;
+      padding: 4rem 10%;
+      background: linear-gradient(135deg, #f8fafc 0%, #eef2ff 100%);
+    }
+
+    .projects h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.4rem;
+      margin-bottom: 2.5rem;
+      color: var(--primary);
+      letter-spacing: 1px;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      align-items: stretch;
+    }
+
+    .project-card {
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      opacity: 0;
+      animation: fadeInUp 0.8s ease forwards;
+    }
+
+    .project-card:nth-child(1) { animation-delay: 0.1s; }
+    .project-card:nth-child(2) { animation-delay: 0.2s; }
+    .project-card:nth-child(3) { animation-delay: 0.3s; }
+    .project-card:nth-child(4) { animation-delay: 0.4s; }
+
+    .project-card:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .project-card .content {
+      padding: 1.3rem;
+      text-align: left;
+    }
+
+    .project-card h4 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: var(--primary);
+    }
+
+    .project-card p {
+      font-size: 0.95rem;
+      color: #475569;
+      margin-bottom: 0.8rem;
+      line-height: 1.5;
+    }
+
+    .project-card .tech {
+      font-size: 0.85rem;
+      color: #64748b;
+    }
+
+    /* Fade-in animation */
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #0f172a;
+      color: #94a3b8;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 { font-size: 2.2rem; }
+      nav { font-size: 0.9rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Colin Woods</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <img src="images/SuitPic.jpg" alt="Colin Woods profile photo">
+    <h2>Hi, I’m Colin Woods</h2>
+    <p>AI & Machine Learning Engineer focused on building intelligent systems and solving complex problems with data-driven solutions.</p>
+    <a href="#about" class="btn-primary"><i class="fa-solid fa-arrow-down"></i> Learn More</a>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="about">
+    <h3>About Me</h3>
+    <p>
+      I’m an AI and Machine Learning engineer specializing in intelligent systems, deep learning models, and natural language processing. My focus is on designing and fine-tuning scalable AI solutions, from hierarchical transformers to advanced classification pipelines, that deliver meaningful insights and real-world impact. While I explore different technologies, my core expertise is in AI and data-driven problem solving.
+    </p>
+    <div class="skills">
+      <span>Python</span>
+      <span>PyTorch</span>
+      <span>TensorFlow</span>
+      <span>Natural Language Processing</span>
+      <span>Deep Learning</span>
+      <span>Machine Learning</span>
+      <span>Data Science</span>
+      <span>Cloud AI Deployment</span>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="projects">
+    <h3>Highlighted Projects</h3>
+    <div class="project-grid">
+
+      <a class="project-card" href="https://github.com/ColinWoods18/MatriculateNLP" target="_blank">
+        <img src="images/pic04.jpg" alt="Hierarchical Transformer">
+        <div class="content">
+          <h4>Hierarchical Transformer for Essay Classification</h4>
+          <p>Developed a long-form text classification model using hierarchical DistilBERT to predict college matriculation outcomes.</p>
+          <div class="tech">Python • PyTorch • NLP</div>
+        </div>
+      </a>
+
+      <div class="project-card">
+        <img src="images/pic06.jpg" alt="Google Hackathon">
+        <div class="content">
+          <h4>Google Generative AI Hackathon – FoodQuest</h4>
+          <p>Built a generative AI MVP on GCP Vertex AI and PaLM2 to provide dynamic food recommendations based on dietary needs.</p>
+          <div class="tech">Vertex AI • PaLM2 • Cloud Deployment</div>
+        </div>
+      </div>
+
+      <a class="project-card" href="https://github.com/ColinWoods18/CV-PuzzleSolver" target="_blank">
+        <img src="images/pic02.jpg" alt="OpenCV Puzzle Solver">
+        <div class="content">
+          <h4>OpenCV Puzzle Solver</h4>
+          <p>Computer vision system that identifies and solves complex puzzle pieces using edge detection and a genetic algorithm.</p>
+          <div class="tech">OpenCV • Genetic Algorithms • Computer Vision</div>
+        </div>
+      </a>
+
+      <div class="project-card">
+        <img src="images/pic03.jpg" alt="Linux Steganography">
+        <div class="content">
+          <h4>Linux Programming & Steganography</h4>
+          <p>Developed Linux shell utilities and an image steganography system embedding metadata invisibly within images.</p>
+          <div class="tech">C • Linux Systems • Security</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+    <!-- RESUME SECTION -->
+  <section id="resume" class="resume">
+    <h3>Resume & Professional Experience</h3>
+    <p>
+      I’m a mid-level AI & Machine Learning engineer with experience in high-security defense environments, healthcare data automation, and applied AI research. My expertise spans deep learning, NLP, scalable ML pipelines, and cloud AI deployment.
+    </p>
+
+    <div class="resume-highlights">
+      <div class="highlight">
+        <h4>Missile Defense Agency (MDA) – Modeling & Simulation Intern</h4>
+        <p>
+          Refactored and modernized existing modeling systems to support new integrations in a secure DoD environment. Applied machine learning, data modeling, and simulation tools to enhance decision-making, while adhering to strict CUI handling protocols and DoD cybersecurity standards.
+        </p>
+      </div>
+
+      <div class="highlight">
+        <h4>Humana Healthcare – Data Management Automation</h4>
+        <p>
+          Improved operational efficiency by automating data pipelines, reducing data request turnaround times. Developed and optimized SQL pipelines for large-scale healthcare data validation and collaborated with offshore teams for automation frameworks.
+        </p>
+      </div>
+
+      <div class="highlight">
+        <h4>Graduate Project – Predicting College Matriculation</h4>
+        <p>
+          Designed a hierarchical BERT + MetaMLP stacking ensemble pipeline for NLP-based essay analysis, achieving F1 score of 0.95 and AUC of 0.997. Combined semantic probabilities with applicant metadata for superior predictive accuracy.
+        </p>
+      </div>
+    </div>
+
+    <a href="images/Colin_Woods_Resume.pdf" class="btn-primary" download>
+      <i class="fa-solid fa-file-arrow-down"></i> Download Full Resume
+    </a>
+  </section>
+
+  <style>
+    .resume {
+      text-align: center;
+      padding: 4rem 10%;
+      background: linear-gradient(135deg, #eef2ff 0%, #f8fafc 100%);
+    }
+
+    .resume h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.4rem;
+      margin-bottom: 1.5rem;
+      color: var(--primary);
+    }
+
+    .resume p {
+      max-width: 800px;
+      margin: 0 auto 1.5rem;
+      font-size: 1.05rem;
+      color: #475569;
+      line-height: 1.5;
+    }
+
+    .resume-highlights {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.2rem; /* tighter spacing */
+      max-width: 800px;
+      margin: 0 auto 2rem;
+      text-align: left;
+    }
+
+    .resume-highlights .highlight h4 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.2rem;
+      color: var(--primary);
+      margin-bottom: 0.3rem;
+    }
+
+    .resume-highlights .highlight p {
+      font-size: 0.98rem;
+      color: #475569;
+      line-height: 1.4;
+      margin-bottom: 0.5rem;
+    }
+
+    .resume .btn-primary {
+      display: inline-block;
+      background: var(--primary);
+      color: white;
+      padding: 0.8rem 1.8rem;
+      border-radius: 40px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+    }
+
+    .resume .btn-primary:hover {
+      background: var(--secondary);
+      color: white;
+    }
+  </style>
 
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
 
-	</body>
+  <footer>
+    &copy; 2025 Colin Woods. All rights reserved.
+  </footer>
+
+</body>
 </html>
